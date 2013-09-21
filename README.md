@@ -60,7 +60,7 @@ tags:
 
 ## Marks
 
-You can find a sample in the following project : [remiii.github.com][https://github.com/Remiii/remiii.github.com]
+You can find a sample in the following project : [remiii.github.com](https://github.com/Remiii/remiii.github.com).
 
 ## Tags
 
@@ -68,7 +68,7 @@ Jekyll, Ruby, Plugin, Tag, Related Tag
 
 ## License
 
-mydotfiles is licensed under the MIT license (see LICENSE.md file).
+jekyll-tag-generator is licensed under the MIT license (see LICENSE.md file).
 
 ## Author
 
