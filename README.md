@@ -7,14 +7,14 @@ Generates tags pages for posts with related tags.
 
 Example Post Configuration:
 
----
-    layout: post
-    title: "Hello world"
-    tags:
-        - sample
-        - ruby
-        - plugin
----
+```
+layout: post
+title: "Hello world"
+tags:
+    - sample
+    - ruby
+    - plugin
+```
 
 ## License
 
