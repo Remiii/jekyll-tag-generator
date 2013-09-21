@@ -22,6 +22,7 @@ Example template tag page `_layout/tag.html`:
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+<h2>Posts</h2>
 {% for post in site.posts %}
     {% for tag in post.tags %}
         {% if tag == page.tag %}
@@ -38,10 +39,10 @@ layout: default
         {% endif %}
     {% endfor %}
 {% endfor %}
-<h3>Related tags</h3>
+<h2>Related tags</h2>
 <div>
     {% for relatedtag in page.relatedtags %}
-        <a href="/blog/tag/{{ relatedtag }}"><span class="label label-info">{{ relatedtag }}</span></a>
+        <a href="/blog/tag/{{ relatedtag }}">{{ relatedtag }}</a>
     {% endfor %}
 </div>
 </div>
