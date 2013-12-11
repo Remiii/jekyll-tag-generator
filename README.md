@@ -2,8 +2,10 @@
 
 TagGenerator for Jekyll
 
-
 Generates tag/tags pages for posts with related tags.
+
+![Screen shot](https://raw.github.com/Remiii/jekyll-tag-generator/master/_documentation/image1.png)<br />
+Sample posts list with tags.
 
 ## Requirements
 
@@ -68,6 +70,20 @@ tags:
     - ruby
     - plugin
 ```
+
+## Screen shot
+
+![Screen shot](https://raw.github.com/Remiii/jekyll-tag-generator/master/_documentation/image1.png)<br />
+Sample posts list with tags.
+
+![Screen shot](https://raw.github.com/Remiii/jekyll-tag-generator/master/_documentation/image2.png)<br />
+Sample posts list for a tag (tag.html).
+
+![Screen shot](https://raw.github.com/Remiii/jekyll-tag-generator/master/_documentation/image3.png)<br />
+Sample tags list (tags.html).
+
+![Screen shot](https://raw.github.com/Remiii/jekyll-tag-generator/master/_documentation/image4.png)<br />
+Sample post.
 
 ## Marks
 
