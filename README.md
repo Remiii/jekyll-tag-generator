@@ -3,7 +3,7 @@
 TagGenerator for Jekyll
 
 
-Generates tags pages for posts with related tags.
+Generates tag/tags pages for posts with related tags.
 
 ## Requirements
 
@@ -13,6 +13,7 @@ Generates tags pages for posts with related tags.
 
 * Copy file `_plugins/tagGenerator.rb` into your `_plugins` folder within your Jekyll project.
 * Create template for tag page into your `_layout/tag.html` within your Jekyll project.
+* Create template for tags page into your `_layout/tags.html` within your Jekyll project.
 * Add tags in your posts files.
 
 Example template tag page `_layout/tag.html`:
@@ -40,12 +41,21 @@ layout: default
     {% endfor %}
 {% endfor %}
 <h2>Related tags</h2>
-<div>
-    {% for relatedtag in page.relatedtags %}
-        <a href="/blog/tag/{{ relatedtag }}">{{ relatedtag }}</a>
-    {% endfor %}
-</div>
-</div>
+{% for relatedtag in page.relatedtags %}
+    <a href="/blog/tag/{{ relatedtag }}">{{ relatedtag }}</a>
+{% endfor %}
+```
+
+Example template tags page `_layout/tags.html`:
+
+```html
+---
+layout: default
+---
+<h1>Posts Tags</h1>
+{% for tag in page.tags %}
+    <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+{% endfor %}
 ```
 
 Example Post Configuration:
@@ -65,7 +75,7 @@ You can find a sample in the following project: [remiii.github.com](https://gith
 
 ## Tags
 
-Jekyll, Ruby, Plugin, Tag, Related Tag
+Jekyll, Ruby, Plugin, Tags, Tag, Related Tag
 
 ## License
 
